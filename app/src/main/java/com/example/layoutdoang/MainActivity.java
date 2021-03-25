@@ -40,6 +40,14 @@ public class MainActivity extends AppCompatActivity
                     Toast t = Toast.makeText(getApplicationContext(),
                             "Login Sukses!", Toast.LENGTH_LONG);
                     t.show();
+
+                    Bundle b = new Bundle();
+                    b.putString("a", nama.trim());
+                    b.putString("b", password.trim());
+
+                    Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
+                    i.putExtras(b);
+                    startActivity(i);
                 }
                 else if (nama.equals(email) && password.equals(pass))
                 {

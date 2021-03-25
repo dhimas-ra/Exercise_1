@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">LayoutDoang</string>
+    <string name="var1">ini pesan</string>
+    <string name="tData">Data Anda</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsigin">Masuk</string>
+    <string name="tLogin">LOGIN</string>
+    <string name="txemail">Hasil Email</string>
+    <string name="txpassword">Hasil password</string>
+    <string name="label2">Login Berhasil</string>
     <string name="todo">TODO</string>
 </resources>
