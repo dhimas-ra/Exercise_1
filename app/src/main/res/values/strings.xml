@@ -9,5 +9,19 @@
     <string name="txemail">Hasil Email</string>
     <string name="txpassword">Hasil password</string>
     <string name="label2">Login Berhasil</string>
+    <string name="mDaftar">Pendaftaran</string>
+    <string name="Idaftar">Daftar</string>
+    <string name="enama">Masukkan Nama</string>
+    <string name="eemail">Masukkan Email</string>
+    <string name="epass">Masukkan Password</string>\
+    <string name="erepass">Masukkan Password Kembali</string>
+    <string name="ealamat">Masukkan Alamat</string>
+    <string name="lihatdata">Lihat Data</string>
+    <string name="editdata">Edit Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail Kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomor Telepon</string>
     <string name="todo">TODO</string>
 </resources>
