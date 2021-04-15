@@ -63,7 +63,7 @@ public class Home_Activity extends AppCompatActivity implements PopupMenu.OnMenu
                 startActivity(intent);
                 break;
             case R.id.mnedit:
-                Toast.makeText(getApplicationContext(),"Ini untuk edit kontak",
+                Toast.makeText(getApplicationContext(), "08**********",
                         Toast.LENGTH_LONG).show();
                         break;
         }

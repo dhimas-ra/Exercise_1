@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="devider">#694FEA</color>
+    <color name="abu">#C0C0C0</color>
+    <color name="abutua">#696969</color>
 </resources>

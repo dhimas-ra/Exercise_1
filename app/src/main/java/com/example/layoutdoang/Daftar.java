@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,7 +15,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class Daftar extends AppCompatActivity {
 
     EditText edtNama, edtAlamat, edtEmail, edtPassword, edtrepass;
-    FloatingActionButton fab;
+    Button rbtnbatal, rbtndaftar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +27,10 @@ public class Daftar extends AppCompatActivity {
         edtEmail =  findViewById(R.id.edemail);
         edtPassword = findViewById(R.id.edPass);
         edtrepass = findViewById(R.id.edrepas);
-        fab = findViewById(R.id.fabSimpan);
+        rbtnbatal = findViewById(R.id.rbtnbatal);
+        rbtndaftar = findViewById(R.id.rbtndaftar);
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        rbtndaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -54,6 +56,13 @@ public class Daftar extends AppCompatActivity {
                     }
 
                 }
+            }
+        });
+        rbtnbatal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
             }
         });
     }

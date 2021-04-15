@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity
 {
 
-    Button btnLogin;
+    Button btnLogin, btnDaftar;
 
     EditText edemail, edpassword;
 
@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnLogin=findViewById(R.id.btSignin);
+        btnLogin=findViewById(R.id.btnLogin);
+        btnDaftar=findViewById(R.id.btnDaftar);
         edemail=findViewById(R.id.edEmail);
         edpassword=findViewById(R.id.edPassword);
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,9 +38,9 @@ public class MainActivity extends AppCompatActivity
                 nama = edemail.getText().toString();
                 password= edpassword.getText().toString();
 
+
                 String email = "mas@mail.com";
                 String pass = "123";
-
                 if (nama.equals(email) && password.equals(pass)) {
                     Toast t = Toast.makeText(getApplicationContext(),
                             "Login Sukses!", Toast.LENGTH_LONG);
@@ -78,22 +80,15 @@ public class MainActivity extends AppCompatActivity
             }
 
         });
+        btnDaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), Daftar.class);
+                startActivity(i);
+            }
+        });
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.mnDaftar)
-        {
-            Intent i = new Intent(getApplicationContext(), Daftar.class);
-            startActivity(i);
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-//        method menu
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 }

@@ -7,17 +7,28 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".Home_Activity">
 
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Masukkan Kata Pencarian">
+        <requestFocus />
+    </SearchView>
+</com.google.android.material.appbar.AppBarLayout>
 
-<TextView
-    android:id="@+id/textView6"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/datakontak"
-    android:layout_gravity="center_horizontal"
-    android:textSize="14pt"
-    />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/datakontak"
+        android:textSize="14pt" />
 
-<ListView
+    <ListView
     android:layout_marginTop="20dp"
     android:id="@+id/listKontak"
     android:layout_width="match_parent"
